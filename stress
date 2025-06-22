@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>stress</Name>
+  <Repository>nickborgers/stress</Repository>
+  <Registry>https://hub.docker.com/repository/docker/nickborgers/stress/general</Registry>
+  <Network>none</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/191379-support-for-stress-containerapp/</Support>
+  <Project>https://github.com/NickBorgers/util/tree/main/stress</Project>
+  <Overview>This is a container image and wrapper script for stress: https://linux.die.net/man/1/stress&#xD;
+&#xD;
+This is for easy execution of stress without installing the package (e.g. on a distro where the package is not in the repos).&#xD;
+&#xD;
+It also includes a script which auto-identifies CPU count and free memory, then hogs it. You can obviously bypass it if you don't like how it works.&#xD;
+&#xD;
+This has some configuration options for level of the test and whether you want it to apply I/O load.</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/NickBorgers/util/refs/heads/main/stress/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1750553274</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Mode" Target="MODE" Default="heavy" Mode="" Description="This is how intense you want the stress to be. It accepts the values " Type="Variable" Display="always" Required="true" Mask="false">medium</Config>
+  <Config Name="Duration" Target="DURATION" Default="30s" Mode="" Description="The duration of the stress test expressed like " Type="Variable" Display="always" Required="true" Mask="false">2m</Config>
+  <Config Name="I/O Threads" Target="IO_THREADS" Default="0" Mode="" Description="The number of threads to run thrashing I/O on the container's disk. I don't really recommend you do this, I leave it set to 0." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <TailscaleStateDir/>
+</Container>
