@@ -27,8 +27,8 @@ This has some configuration options for level of the test and whether you want i
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Mode" Target="MODE" Default="heavy" Mode="" Description="This is how intense you want the stress to be. It accepts the values " Type="Variable" Display="always" Required="true" Mask="false">medium</Config>
-  <Config Name="Duration" Target="DURATION" Default="30s" Mode="" Description="The duration of the stress test expressed like " Type="Variable" Display="always" Required="true" Mask="false">2m</Config>
+  <Config Name="Mode" Target="MODE" Default="heavy" Mode="" Description="This is how intense you want the stress to be. It accepts the values heavy, medium, and light." Type="Variable" Display="always" Required="true" Mask="false">medium</Config>
+  <Config Name="Duration" Target="DURATION" Default="30s" Mode="" Description="The duration of the stress test expressed like 2m for 2 minutes or 1h for 1 hour." Type="Variable" Display="always" Required="true" Mask="false">2m</Config>
   <Config Name="I/O Threads" Target="IO_THREADS" Default="0" Mode="" Description="The number of threads to run thrashing I/O on the container's disk. I don't really recommend you do this, I leave it set to 0." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
   <TailscaleStateDir/>
 </Container>
