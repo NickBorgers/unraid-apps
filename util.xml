@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/191378-support-for-util-containerapp/</Support>
+  <Support/>
   <Project>https://github.com/NickBorgers/util/tree/main/unraid-util</Project>
   <Overview>I have started using unraid as a converged data storage and workload environment. The simplicity it provides comes at a cost, which is that I feel the command line interface on the base OS is not well suited to diagnosing problems.&#xD;
 &#xD;
@@ -23,9 +23,10 @@ Note: this must be run with Network as Host for tcpdump to run in the host's net
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1750552389</DateInstalled>
+  <DateInstalled>1755970681</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
+  <Config Name="Mount" Target="/host/" Default="" Mode="rw" Description="This is a mount of the complete unraid host file system. It's nested in this subfolder because the container has its own filesystem. You can access your shares through this." Type="Path" Display="always" Required="false" Mask="false">/</Config>
   <TailscaleStateDir/>
 </Container>
